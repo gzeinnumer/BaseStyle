@@ -2,15 +2,18 @@ package com.gzeinnumer.basestyle
 
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.PopupMenu
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.tiper.MaterialSpinner
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class ThirdActivity : AppCompatActivity() {
 
@@ -85,5 +88,18 @@ class ThirdActivity : AppCompatActivity() {
         material_spinner_1.let {
 
         }
+    }
+
+    fun showPopup(v: View?) {
+        val popup = PopupMenu(this, v)
+        val inflater: MenuInflater = popup.menuInflater
+        inflater.inflate(R.menu.mygzn_bottom_nav, popup.menu)
+        popup.setOnMenuItemClickListener { item ->
+            when (item?.itemId) {
+                R.id.id_next -> startActivity(Intent(applicationContext, MainActivity::class.java))
+            }
+            false
+        }
+        popup.show()
     }
 }
