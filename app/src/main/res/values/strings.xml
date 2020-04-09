@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaseStyle</string>
+    <string name="mymaterialspinnerfilledboxdownarrow_dialog">MyMaterialSpinnerFilledBoxDownArrow_Dialog</string>
+    <string name="error">I am an error</string>
+</resources>
