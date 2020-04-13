@@ -199,29 +199,29 @@
                 android:text="MyTextHeader" />
 
             <com.tiper.MaterialSpinner
-                android:focusable="false"
                 android:id="@+id/material_spinner_1"
                 style="@style/MyMaterialSpinnerOutlinedBox_BottomSheet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:focusable="false"
                 android:hint="MyMaterialSpinnerOutlinedBox_BottomSheet" />
 
             <com.tiper.MaterialSpinner
-                android:focusable="false"
                 android:id="@+id/material_spinner_2"
                 style="@style/MyMaterialSpinnerFilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:focusable="false"
                 android:hint="MyMaterialSpinnerFilledBox"
                 android:prompt="@string/app_name"
                 tools:text="lalala" />
 
             <com.tiper.MaterialSpinner
-                android:focusable="false"
                 android:id="@+id/material_spinner_3"
                 style="@style/MyMaterialSpinnerFilledBoxDownArrow_Dialog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:focusable="false"
                 android:hint="@string/mymaterialspinnerfilledboxdownarrow_dialog"
                 android:prompt="@string/mymaterialspinnerfilledboxdownarrow_dialog" />
 
@@ -241,9 +241,8 @@
                     android:id="@+id/material_spinner_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:prompt="@string/app_name"
-                    android:spinnerMode="dialog" />
+                    style="@style/MySpinnerDialog"
+                    android:prompt="@string/app_name" />
 
             </LinearLayout>
 

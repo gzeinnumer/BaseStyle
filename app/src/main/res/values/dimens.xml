@@ -2,8 +2,13 @@
 <resources>
     <dimen name="h1">20sp</dimen>
     <dimen name="h2">18sp</dimen>
+    <dimen name="all_text">19sp</dimen>
+    <!--    <dimen name="h18">18sp</dimen>-->
+    <!--    <dimen name="h17">17sp</dimen>-->
     <dimen name="h3">16sp</dimen>
+    <!--    <dimen name="h15">15sp</dimen>-->
     <dimen name="h4">14sp</dimen>
+    <dimen name="h9">9sp</dimen>
     <dimen name="parent_content_no_scroll">16dp</dimen>
     <dimen name="parent_content_no_scroll_card_edge">16dp</dimen>
     <dimen name="space_take_foto">10dp</dimen>

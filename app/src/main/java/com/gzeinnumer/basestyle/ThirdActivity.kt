@@ -19,22 +19,27 @@ class ThirdActivity : AppCompatActivity() {
 
     private val listener by lazy {
         object : MaterialSpinner.OnItemSelectedListener {
-            override fun onItemSelected(parent: MaterialSpinner, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: MaterialSpinner,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 Log.v("MaterialSpinner", "onItemSelected parent=${parent.id}, position=$position")
-                when(parent){
-                    material_spinner_1 ->{
+                when (parent) {
+                    material_spinner_1 -> {
                         Log.v("MaterialSpinner", "material_spinner_1")
                     }
-                    material_spinner_2 ->{
+                    material_spinner_2 -> {
                         Log.v("MaterialSpinner", "material_spinner_2")
                     }
-                    material_spinner_3 ->{
+                    material_spinner_3 -> {
                         Log.v("MaterialSpinner", "material_spinner_3")
                     }
-                    material_spinner_4 ->{
+                    material_spinner_4 -> {
                         Log.v("MaterialSpinner", "material_spinner_4")
                     }
-                    material_spinner_5 ->{
+                    material_spinner_5 -> {
                         Log.v("MaterialSpinner", "material_spinner_5")
                     }
                 }
@@ -62,9 +67,12 @@ class ThirdActivity : AppCompatActivity() {
             }
             false
         }
-
-        ArrayAdapter.createFromResource(this, R.array.planets_array, android.R.layout.simple_spinner_item).let {
-            it.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.planets_array,
+            R.layout.mygzn_simple_spinner_item
+        ).let {
+            it.setDropDownViewResource(R.layout.mygzn_spinner_dropdown_item)
             material_spinner_1.apply {
                 adapter = it
                 onItemSelectedListener = listener
@@ -80,8 +88,21 @@ class ThirdActivity : AppCompatActivity() {
                 adapter = it
                 onItemSelectedListener = listener
                 selection = 3
-                setDrawable(ResourcesCompat.getDrawable(resources, R.drawable.mygzn_arrow_downward, theme))
+                setDrawable(
+                    ResourcesCompat.getDrawable(
+                        resources,
+                        R.drawable.mygzn_arrow_downward,
+                        theme
+                    )
+                )
             }
+        }
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.planets_array,
+            R.layout.mygzn_simple_spinner_item
+        ).let {
+            it.setDropDownViewResource(R.layout.mygzn_spinner_dropdown_item)
             material_spinner_4.adapter = it
             material_spinner_5.adapter = it
         }
