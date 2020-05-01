@@ -3,45 +3,14 @@ package com.gzeinnumer.basestyle
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
-import com.tiper.MaterialSpinner
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    private val listener by lazy {
-        object : MaterialSpinner.OnItemSelectedListener {
-            override fun onItemSelected(parent: MaterialSpinner, view: View?, position: Int, id: Long) {
-                Log.v("MaterialSpinner", "onItemSelected parent=${parent.id}, position=$position")
-                when(parent){
-                    material_spinner_1 ->{
-                        Log.v("MaterialSpinner", "material_spinner_1")
-                    }
-                    material_spinner_2 ->{
-                        Log.v("MaterialSpinner", "material_spinner_2")
-                    }
-                    material_spinner_3 ->{
-                        Log.v("MaterialSpinner", "material_spinner_3")
-                    }
-                    material_spinner_4 ->{
-                        Log.v("MaterialSpinner", "material_spinner_4")
-                    }
-                    material_spinner_5 ->{
-                        Log.v("MaterialSpinner", "material_spinner_5")
-                    }
-                }
-            }
-
-            override fun onNothingSelected(parent: MaterialSpinner) {
-                Log.v("MaterialSpinner", "onNothingSelected parent=${parent.id}")
-            }
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,30 +29,12 @@ class MainActivity : AppCompatActivity() {
             false
         }
 
-        ArrayAdapter.createFromResource(this, R.array.planets_array, android.R.layout.simple_spinner_item).let {
-            it.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            material_spinner_1.apply {
-                adapter = it
-                onItemSelectedListener = listener
-                onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
-                    Log.v("MaterialSpinner", "onFocusChange hasFocus=$hasFocus")
-                }
-            }
-            material_spinner_2.apply {
-                adapter = it
-                onItemSelectedListener = listener
-            }
-            material_spinner_3.apply {
-                adapter = it
-                onItemSelectedListener = listener
-                selection = 3
-                setDrawable(ResourcesCompat.getDrawable(resources, R.drawable.mygzn_arrow_downward, theme))
-            }
-            material_spinner_4.adapter = it
-            material_spinner_5.adapter = it
-        }
-        material_spinner_1.let {
-
-        }
+//        val items = listOf("Material", "Design", "Components", "Android")
+        val items = resources.getStringArray(R.array.planets_array)
+        val myAdapter = ArrayAdapter(applicationContext, R.layout.mygzn_list_item, items)
+        material_spinner_1.setAdapter(myAdapter)
+        material_spinner_2.setAdapter(myAdapter)
+        material_spinner_4.adapter = myAdapter
+        material_spinner_5.adapter = myAdapter
     }
 }
