@@ -10,4 +10,8 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string-array name="koneksi_data">
+        <item>Internet</item>
+        <item>Local</item>
+    </string-array>
 </resources>
