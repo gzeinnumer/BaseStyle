@@ -195,6 +195,7 @@
     <style name="MyAutoCompleteTextView">
         <item name="android:editable">false</item>
         <item name="android:inputType">none</item>
+        <item name="android:textSize">@dimen/h3</item>
     </style>
 
     <style name="MyParentRadioGroup">
