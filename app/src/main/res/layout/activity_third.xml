@@ -30,8 +30,8 @@
                     android:text="MyCostumToolbarTitle" />
 
                 <ImageButton
-                    android:onClick="showPopup"
                     style="@style/MyOptionMenu"
+                    android:onClick="showPopup"
                     android:src="@drawable/mygzn_more_vert" />
             </LinearLayout>
         </com.google.android.material.appbar.MaterialToolbar>
@@ -209,25 +209,28 @@
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/MyAutoCompleteTextViewFilledBox"
                     android:layout_width="match_parent"
-                    android:hint="MyAutoCompleteTextViewFilledBox"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:hint="MyAutoCompleteTextViewFilledBox">
+
                     <AutoCompleteTextView
                         android:id="@+id/material_spinner_1"
+                        style="@style/MyAutoCompleteTextView"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/MyAutoCompleteTextView"/>
+                        android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/MyAutoCompleteTextViewOutlineBox"
                     android:layout_width="match_parent"
-                    android:hint="MyAutoCompleteTextViewOutlineBox"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:hint="MyAutoCompleteTextViewOutlineBox">
+
                     <AutoCompleteTextView
-                        style="@style/MyAutoCompleteTextView"
                         android:id="@+id/material_spinner_2"
+                        style="@style/MyAutoCompleteTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
+
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
@@ -291,7 +294,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Take Foto"
+                        android:text="@string/take_foto"
                         android:textStyle="italic" />
 
                 </LinearLayout>
@@ -316,7 +319,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Take Foto"
+                            android:text="@string/take_foto"
                             android:textStyle="italic" />
 
                     </LinearLayout>
@@ -336,7 +339,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Take Foto"
+                            android:text="@string/take_foto"
                             android:textStyle="italic" />
 
                     </LinearLayout>
@@ -356,11 +359,20 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Take Foto"
+                            android:text="@string/take_foto"
                             android:textStyle="italic" />
 
                     </LinearLayout>
+
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/def_margin"
+                    android:layout_width="@dimen/img_display"
+                    android:layout_height="@dimen/img_display"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mygzn_image_preview"
+                    android:src="@drawable/mygzn_image_preview_icon" />
 
                 <View style="@style/MyDivider" />
 
