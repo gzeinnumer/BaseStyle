@@ -3,4 +3,5 @@
     <string name="mymaterialspinnerfilledboxdownarrow_dialog">MyMaterialSpinnerFilledBoxDownArrow_Dialog</string>
     <string name="error">I am an error</string>
     <string name="take_foto">"Take Foto "</string>
+    <string name="required">"*Required "</string>
 </resources>

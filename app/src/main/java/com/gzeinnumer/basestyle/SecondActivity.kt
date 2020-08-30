@@ -9,7 +9,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.core.content.res.ResourcesCompat
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_second.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class SecondActivity : AppCompatActivity() {
 
