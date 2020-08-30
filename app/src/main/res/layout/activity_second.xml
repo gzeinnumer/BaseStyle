@@ -44,7 +44,7 @@
             </com.google.android.material.appbar.MaterialToolbar>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/content_main_card_corner" />
+        <include layout="@layout/content_second" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/btn_nav"

@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/apb"
+        style="@style/MyAppbarLayout">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tb"
+            style="@style/MyMaterialToolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    style="@style/MyCostumToolbarImage"
+                    android:src="@drawable/mygzn_keyboard_arrow_left"
+                    android:tag="CostumToolbarImage" />
+
+                <TextView
+                    style="@style/MyCostumToolbarTitle"
+                    android:text="MyCostumToolbarTitle" />
+
+                <ImageButton
+                    style="@style/MyOptionMenu"
+                    android:onClick="showPopup"
+                    android:src="@drawable/mygzn_more_vert" />
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:focusableInTouchMode="true"
-        android:orientation="vertical"
-        tools:ignore="HardcodedText">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/apb"
-            style="@style/MyAppbarLayout">
+        <include layout="@layout/content_third" />
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/tb"
-                style="@style/MyMaterialToolbar">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageButton
-                        android:id="@+id/btn_back"
-                        style="@style/MyCostumToolbarImage"
-                        android:src="@drawable/mygzn_keyboard_arrow_left"
-                        android:tag="CostumToolbarImage" />
-
-                    <TextView
-                        style="@style/MyCostumToolbarTitle"
-                        android:text="MyCostumToolbarTitle" />
-
-                    <ImageButton
-                        style="@style/MyOptionMenu"
-                        android:onClick="showPopup"
-                        android:src="@drawable/mygzn_more_vert" />
-                </LinearLayout>
-            </com.google.android.material.appbar.MaterialToolbar>
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <include layout="@layout/content_main_card_corner" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/btn_nav"
-            style="@style/MyBottomNavigationView"
-            app:menu="@menu/mygzn_bottom_nav" />
     </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_nav"
+        style="@style/MyBottomNavigationView"
+        app:menu="@menu/mygzn_bottom_nav" />
+</LinearLayout>
