@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content.*
 
 class MainActivity : AppCompatActivity() {
 
