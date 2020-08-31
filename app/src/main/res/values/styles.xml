@@ -353,4 +353,14 @@
         <item name="android:background">@drawable/mygzn_image_preview</item>
         <item name="android:src">@drawable/mygzn_image_preview_icon</item>
     </style>
+
+    <style name="MySpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyTakeImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>

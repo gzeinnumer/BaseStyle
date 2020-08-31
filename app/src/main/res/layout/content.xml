@@ -44,7 +44,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_2"
-            style="@style/MyTextInputEditText"/>
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,7 +55,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_7"
-            style="@style/MyTextInputEditText"/>
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,7 +82,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_4"
-            style="@style/MyTextInputEditText"/>
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -162,40 +162,32 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        style="@style/MyParentSpinner" >
+    <LinearLayout style="@style/MyParentSpinner">
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dialog" />
 
         <Spinner
             android:id="@+id/material_spinner_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MySpinner"
             android:layout_weight="1"
             android:prompt="@string/app_name"
             android:spinnerMode="dialog" />
 
     </LinearLayout>
 
-    <LinearLayout
-        style="@style/MyParentSpinner">
+    <LinearLayout style="@style/MyParentSpinner">
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dropdown" />
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/material_spinner_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MySpinner"
             android:layout_weight="1"
             android:prompt="@string/app_name"
             android:spinnerMode="dropdown" />
@@ -207,17 +199,14 @@
     <LinearLayout
         android:id="@+id/img_1"
         style="@style/MyImageFoto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_between_photo_icon">
+        android:layout_width="match_parent">
 
         <TextView
             style="@style/MyTextRequired"
             android:layout_gravity="center" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MyTakeImage"
             android:src="@drawable/mygzn_take_image" />
 
         <TextView style="@style/MyImageFotoText" />
@@ -231,12 +220,10 @@
 
         <LinearLayout
             android:id="@+id/img_2"
-            style="@style/MyImageFoto"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -245,12 +232,10 @@
 
         <LinearLayout
             android:id="@+id/img_3"
-            style="@style/MyImageFoto"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -259,12 +244,10 @@
 
         <LinearLayout
             android:id="@+id/img_4"
-            style="@style/MyImageFoto"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -419,8 +402,7 @@
         style="@style/MyCheckBox"
         android:text="MyCheckBox" />
 
-    <LinearLayout
-        style="@style/MyParentCheckBox">
+    <LinearLayout style="@style/MyParentCheckBox">
 
         <TextView
             style="@style/MyTextContent"
