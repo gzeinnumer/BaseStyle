@@ -30,10 +30,12 @@
                         android:tag="CostumToolbarImage" />
 
                     <TextView
+                        android:id="@+id/tv_toolbar"
                         style="@style/MyCostumToolbarTitle"
                         android:text="MyCostumToolbarTitle" />
 
                     <TextView
+                        android:id="@+id/btn_popup"
                         style="@style/MyCostumToolbarMenus"
                         android:tag="MyCostumToolbarMenus"
                         android:text="Filter" />
