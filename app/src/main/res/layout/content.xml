@@ -14,66 +14,48 @@
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <TextView
         style="@style/MyTextContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextContent" />
 
     <View style="@style/MyDivider" />
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutOutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutOutlinedBox"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_1"
             style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutOutlinedBoxNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutOutlinedBoxNext">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_2"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutOutlinedBoxNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutOutlinedBoxNext*"
         android:textColorHint="@color/red_500">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_7"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,43 +63,31 @@
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutFilledBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutFilledBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_3"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutFilledBoxNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutFilledBoxNext"
         app:startIconDrawable="@drawable/mygzn_home">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_4"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutOutlinedBoxNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutOutlinedBoxNext"
         app:counterEnabled="true"
         app:counterMaxLength="20"
@@ -127,31 +97,23 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_5"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyTextInputLayoutFilledBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyTextInputLayoutFilledBox*"
         android:textColorHint="@color/red_500">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_6"
-            style="@style/MyTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyTextInputEditText" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         style="@style/MyParentButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:gravity="end"
         android:orientation="vertical">
 
@@ -178,74 +140,54 @@
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyAutoCompleteTextViewFilledBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyAutoCompleteTextViewFilledBox">
 
         <AutoCompleteTextView
             android:id="@+id/material_spinner_1"
-            style="@style/MyAutoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyAutoCompleteTextView" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/MyAutoCompleteTextViewOutlineBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="MyAutoCompleteTextViewOutlineBox">
 
         <AutoCompleteTextView
             android:id="@+id/material_spinner_2"
-            style="@style/MyAutoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/MyAutoCompleteTextView" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        style="@style/MyParentSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <LinearLayout style="@style/MyParentSpinner">
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dialog" />
 
         <Spinner
             android:id="@+id/material_spinner_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MySpinner"
             android:layout_weight="1"
             android:prompt="@string/app_name"
             android:spinnerMode="dialog" />
 
     </LinearLayout>
 
-    <LinearLayout
-        style="@style/MyParentSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <LinearLayout style="@style/MyParentSpinner">
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dropdown" />
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/material_spinner_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MySpinner"
             android:layout_weight="1"
             android:prompt="@string/app_name"
             android:spinnerMode="dropdown" />
@@ -257,17 +199,14 @@
     <LinearLayout
         android:id="@+id/img_1"
         style="@style/MyImageFoto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_between_photo_icon">
+        android:layout_width="match_parent">
 
         <TextView
             style="@style/MyTextRequired"
             android:layout_gravity="center" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/MyTakeImage"
             android:src="@drawable/mygzn_take_image" />
 
         <TextView style="@style/MyImageFotoText" />
@@ -281,14 +220,10 @@
 
         <LinearLayout
             android:id="@+id/img_2"
-            style="@style/MyImageFoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -297,14 +232,10 @@
 
         <LinearLayout
             android:id="@+id/img_3"
-            style="@style/MyImageFoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -313,14 +244,10 @@
 
         <LinearLayout
             android:id="@+id/img_4"
-            style="@style/MyImageFoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_between_photo_icon">
+            style="@style/MyImageFoto">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/MyTakeImage"
                 android:src="@drawable/mygzn_take_image" />
 
             <TextView style="@style/MyImageFotoText" />
@@ -346,27 +273,19 @@
 
     <LinearLayout
         style="@style/MyParentRadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             style="@style/MyTextHeader"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyTextHeader" />
 
         <TextView
             style="@style/MyRadioGroupText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyRadioGroupText" />
 
         <RadioGroup
             android:id="@+id/rg"
             style="@style/MyRadioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:checkedButton="@+id/first">
 
             <RadioButton
@@ -382,15 +301,11 @@
 
         <TextView
             style="@style/MyRadioGroupText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyRadioGroupText" />
 
         <RadioGroup
             android:id="@+id/rg_1"
             style="@style/MyRadioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:checkedButton="@+id/first_1"
             android:orientation="horizontal">
 
@@ -409,8 +324,6 @@
 
         <TextView
             style="@style/MyTextHeader"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyTextHeader" />
 
         <LinearLayout
@@ -420,8 +333,6 @@
 
             <TextView
                 style="@style/MyTextContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
                 android:layout_marginTop="3dp"
                 android:layout_weight="1"
@@ -430,8 +341,6 @@
             <RadioGroup
                 android:id="@+id/rg_2"
                 style="@style/MyRadioGroup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checkedButton="@+id/first_2"
                 android:orientation="horizontal">
@@ -453,20 +362,14 @@
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <TextView
         style="@style/MyTextEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextEditText" />
 
     <EditText
         style="@style/MyEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:hint="MyEditText" />
 
@@ -477,14 +380,10 @@
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyTextContent" />
 
         <EditText
             style="@style/MyEditText_Horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="MyEditText_Horizontal" />
     </LinearLayout>
@@ -493,29 +392,20 @@
 
     <TextView
         style="@style/MyTextHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyTextHeader" />
 
     <TextView
         style="@style/MyCheckBoxText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="MyCheckBoxText" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         style="@style/MyCheckBox"
         android:text="MyCheckBox" />
 
-    <LinearLayout
-        style="@style/MyParentCheckBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <LinearLayout style="@style/MyParentCheckBox">
 
         <TextView
             style="@style/MyTextContent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="MyTextContent" />
 
         <com.google.android.material.checkbox.MaterialCheckBox
