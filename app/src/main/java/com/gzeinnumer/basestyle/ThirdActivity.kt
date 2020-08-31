@@ -40,18 +40,18 @@ class ThirdActivity : AppCompatActivity() {
         material_spinner_2.setAdapter(myAdapter)
         material_spinner_4.adapter = myAdapter
         material_spinner_5.adapter = myAdapter
-    }
 
-    fun showPopup(v: View?) {
-        val popup = PopupMenu(this, v)
-        val inflater: MenuInflater = popup.menuInflater
-        inflater.inflate(R.menu.mygzn_bottom_nav, popup.menu)
-        popup.setOnMenuItemClickListener { item ->
-            when (item?.itemId) {
-                R.id.id_next -> startActivity(Intent(applicationContext, MainActivity::class.java))
+        btn_popup.setOnClickListener {
+            val popup = PopupMenu(this, btn_popup)
+            val inflater: MenuInflater = popup.menuInflater
+            inflater.inflate(R.menu.mygzn_bottom_nav, popup.menu)
+            popup.setOnMenuItemClickListener { item ->
+                when (item?.itemId) {
+                    R.id.id_next -> startActivity(Intent(applicationContext, MainActivity::class.java))
+                }
+                false
             }
-            false
+            popup.show()
         }
-        popup.show()
     }
 }

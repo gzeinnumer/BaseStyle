@@ -27,12 +27,13 @@
                     android:tag="CostumToolbarImage" />
 
                 <TextView
+                    android:id="@+id/tv_toolbar"
                     style="@style/MyCostumToolbarTitle"
                     android:text="MyCostumToolbarTitle" />
 
                 <ImageButton
+                    android:id="@+id/btn_popup"
                     style="@style/MyOptionMenu"
-                    android:onClick="showPopup"
                     android:src="@drawable/mygzn_more_vert" />
             </LinearLayout>
         </com.google.android.material.appbar.MaterialToolbar>
